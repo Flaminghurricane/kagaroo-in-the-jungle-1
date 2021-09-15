@@ -54,10 +54,8 @@ function setup() {
 function draw() {
   background(255);
 
-   kangaroo.X=camera.position.X-270;
-   kangaroo.X=camera.position.X-270;
-   kangaroo.X=camera.position.X-270;
-   kangaroo.X=camera.position.x-270;
+  
+   kangaroo.x=camera.position.x-270;
    
   if (gameState===PLAY){
 
@@ -113,9 +111,7 @@ function spawnShrubs() {
   if (frameCount % 150 === 0) {
 
      var shrub = createSprite(camera.position.x+500,330,40,10);
-    var shrub = createSprite(camera.position.x+500,330,40,10);
-     var shrub = createSprite(camera.position.x+500,330,40,10);
-     var shrub = createSprite(camera.position.x+500,330,40,10);
+
 
     shrub.velocityX = -(6 + 3*score/100)
     shrub.scale = 0.6;
@@ -145,9 +141,7 @@ function spawnObstacles() {
   if(frameCount % 120 === 0) {
 
      var obstacle = createSprite(camera.position.x+400,330,40,40);
-     var obstacle = createSprite(camera.position.x+400,330,40,40);
-     var obstacle = createSprite(camera.position.x+400,330,40,40);
-     var obstacle = createSprite(camera.position.x+400,330,40,40);
+   
 
     obstacle.setCollider("rectangle",0,0,200,200)
     obstacle.addImage(obstacle1);
